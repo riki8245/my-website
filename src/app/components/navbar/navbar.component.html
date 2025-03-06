@@ -1,0 +1,19 @@
+<section class="hamburguer-icon" (click)="ToggleHamburgerMenu()">
+  <img *ngIf="!ham_state"class="item-ham" src="/assets/images/menu.png" alt="hamburguerIcon">
+  <img *ngIf="ham_state" class="item-ham" src="/assets/images/close.png" alt="closeIcon">
+</section>
+<section [@isVisibleChanged]="ham_state" class="nav-bar-custom">
+    <div class="nav-item">
+      <a class="nav-link" (click)="ToggleHamburgerMenu(false)" routerLink="/about" routerLinkActive="active-link">About</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" (click)="ToggleHamburgerMenu(false)" routerLink="/projects" routerLinkActive="active-link">Experience</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" (click)="ToggleHamburgerMenu(false)" routerLink="/contact" routerLinkActive="active-link">Contact</a>
+    </div>
+    <br>
+    <div class="btn-custom" onclick="window.open('https://drive.google.com/file/d/17NJtGT4bNNeOj7wgkEh9UxpIAeyXxnKp/view?usp=drive_link','mywindow');">
+      <a class="nav-link">Resume</a>
+    </div>
+</section>

@@ -1,0 +1,126 @@
+@use "abstracts" as *;
+
+.page-container{
+  margin: 4vw 0 0 30vw;
+}
+
+.experience-section {
+  background-color: $rk-dark-bg;
+  margin: 0vw 1vw 0 0;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.experience-card {
+  background-color: $rk-dark-blue;
+  padding: 20px;
+  border-radius: 12px;
+  outline: 0px none $rk-faded-gray;
+  width: 50%;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $rk-dark-blue-hover; // x2 - Color en hover
+    outline: 3px solid $rk-faded-gray;
+    cursor: pointer;
+  }
+}
+
+.experience-duration {
+  color: $rk-faded-gray;
+  font-size: $rk-regular-size;
+}
+
+.experience-role {
+  font-size: $rk-medium-size;
+  color: $rk-blue;
+}
+
+.experience-description {
+  font-family: Candara;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  font-size: $rk-regular-big-size;
+  color: $rk-soft-white;
+}
+
+.experience-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background-color: $rk-cyan;
+  color: $rk-dark-bg;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: $rk-small-size;
+}
+
+.skills-header-container{
+  text-align: center;
+  width: 55%;
+}
+
+.skills-subtitle{
+  margin-top: 4rem;
+  width: 55%;
+  text-align: center;
+}
+
+.skills-section {
+  width: 50%;
+  //margin-inline: auto;
+  margin-bottom: 3rem;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  font-size: $rk-regular-size;
+  color: $rk-soft-white;
+}
+
+.space-evenly{
+  width: 100%;
+  justify-content: center;
+}
+
+.subtitle_section{
+  margin-right: 3rem;
+}
+
+@media (max-width: $max_resolution_width) {
+
+  .experience-card {
+    width: 84%;
+  }
+  .skills-section {
+    width: 84%;
+  }
+}
+

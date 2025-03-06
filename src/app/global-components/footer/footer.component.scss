@@ -1,0 +1,9 @@
+@use "abstracts" as *;
+
+.footer-custom {
+  min-height: 6.5vh;
+  padding-top: 2rem;
+  text-align: center;
+  color: $rk-dark-bg;
+  font-size: $rk-small-size;
+}

@@ -1,0 +1,67 @@
+@use "abstracts" as *;
+
+.nav-bar-custom{
+  margin: 2em 2em 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: auto;
+}
+
+.nav-item{
+  padding: 1.2em;
+  width: 6em;
+  text-align: center;
+  font-family: "Fira Code", serif;
+  color: $rk-light-white;
+  font-size: $rk-regular-size;
+}
+
+.nav-link {
+  color: $rk-light-white; // x1 - Color base
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: $rk-faded-gray; // x2 - Color en hover
+  }
+
+  &.active-link {
+    color: $rk-blue; // x3 - Color cuando está activa la ruta
+    font-weight: bold; // Opcional: resaltar cuando está activa
+  }
+}
+
+.hamburguer-icon{
+  position: fixed;
+  top:1rem;
+  right:1.4rem;
+  visibility: hidden;
+  z-index: 1000;
+}
+.item-ham{
+  width: 48px;
+  height: 48px;
+}
+
+@media (max-width: $max_resolution_width) {
+  .hamburguer-icon{
+    visibility: visible;
+  }
+
+  .nav-bar-custom{
+    margin:0;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top:0;
+    right:-1px;
+    background-color: $rk-dark-blue;
+    padding: 3rem;
+  }
+}
+
+
+
