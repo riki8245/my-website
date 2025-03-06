@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/my-website": {},
+    "/my-website/about": {},
+    "/my-website/contact": {},
+    "/my-website/projects": {}
+  }
+}
