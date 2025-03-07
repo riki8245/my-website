@@ -1,6 +1,6 @@
 <section class="hamburguer-icon" (click)="ToggleHamburgerMenu()">
-  <img *ngIf="!ham_state"class="item-ham" src="/assets/images/menu.png" alt="hamburguerIcon">
-  <img *ngIf="ham_state" class="item-ham" src="/assets/images/close.png" alt="closeIcon">
+  <img *ngIf="!ham_state"class="item-ham" src="./assets/images/menu.png" alt="hamburguerIcon">
+  <img *ngIf="ham_state" class="item-ham" src="./assets/images/close.png" alt="closeIcon">
 </section>
 <section [@isVisibleChanged]="ham_state" class="nav-bar-custom">
     <div class="nav-item">
